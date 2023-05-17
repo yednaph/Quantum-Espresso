@@ -1,8 +1,8 @@
 &CONTROL
 calculation = 'scf'         ! for self consistent field calculation
 prefix = 'silicon'          ! prefix will be added to the output files (file name)
-outdir = './tmp/silicon/'   ! output directory (you should check with your working directory)
-pseudo_dir = './pseudos/'   ! path to accesss the pseudopotential(s)  (you should check with your working directory)
+outdir = './silicon/'   ! output directory (you should check with your working directory)
+pseudo_dir = './PPlibrary/'   ! path to accesss the pseudopotential(s)  (you should check with your working directory)
 verbosity = 'high'          ! 'high' means more details to be written on the output file(s).
 /
 
