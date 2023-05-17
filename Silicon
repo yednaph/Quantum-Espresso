@@ -1,0 +1,33 @@
+&CONTROL
+calculation = 'scf'         ! for self consistent field calculation
+prefix = 'silicon'          ! prefix will be added to the output files (file name)
+outdir = './tmp/silicon/'   ! output directory (you should check with your working directory)
+pseudo_dir = './pseudos/'   ! path to accesss the pseudopotential(s)  (you should check with your working directory)
+verbosity = 'high'          ! 'high' means more details to be written on the output file(s).
+/
+
+&SYSTEM
+ibrav =  2                  ! Bravais lattice index, which is 2 for FCC structure (check pw.x documentation for other types of lattices)
+celldm(1) = 10.26121        ! lattice constant in Bohr (atomic unit) (check pw.x documentation for more details)
+nat =  2                    ! number of atoms in an unit cell
+ntyp = 1                    ! number of different types of atom in the cell
+ecutwfc = 50                ! kinetic energy cutoff for wavefunction in Ry (check its minimum value in the pseudopotential file)
+ecutrho = 300
+! number of bands to calculate
+  nbnd = 8
+/
+
+&ELECTRONS
+! Mixing factor used in the self-consistent method
+  mixing_beta = 0.6
+/
+
+ATOMIC_SPECIES
+  Si 28.086 Si.pz-vbc.UPF
+
+ATOMIC_POSITIONS (alat)
+  Si 0.0 0.0 0.0
+  Si 0.25 0.25 0.25
+
+K_POINTS (automatic)
+  6 6 6 0 0 0
