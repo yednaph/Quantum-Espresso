@@ -11,15 +11,15 @@ ibrav =  2                  ! Bravais lattice index, which is 2 for FCC structur
 celldm(1) = 10.26121        ! lattice constant in Bohr (atomic unit) (check pw.x documentation for more details)
 nat =  2                    ! number of atoms in an unit cell
 ntyp = 1                    ! number of different types of atom in the cell
-ecutwfc = 50                ! kinetic energy cutoff for wavefunction in Ry (check its minimum value in the pseudopotential file)
-ecutrho = 300
-! number of bands to calculate
-  nbnd = 8
+ecutwfc = 50                ! Kinetic energy cutoff (Ry) for wavefunction (check its minimum value in the pseudopotential file)
+ecutrho = 300               ! Kinetic energy cutoff (Ry) for charge density (check its minimum value in the pseudopotential file)
+nbnd = 8                    ! number of bands to calculate
 /
 
 &ELECTRONS
-! Mixing factor used in the self-consistent method
-  mixing_beta = 0.6
+electron_maxstep = 200      ! number of iterations in a scf step (default is 100)
+conv_thr = 1e-6             ! Convergence threshold for selfconsistency
+mixing_beta = 0.6           ! mixing factor for self-consistency
 /
 
 ATOMIC_SPECIES
@@ -30,4 +30,4 @@ ATOMIC_POSITIONS (alat)
   Si 0.25 0.25 0.25
 
 K_POINTS (automatic)
-  6 6 6 0 0 0
+8 8 8 0 0 0                 !  (nk1, nk2, nk3) as in Monkhorst-Pack grids with (sk1, sk2, sk3) offset
