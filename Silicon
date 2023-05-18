@@ -1,16 +1,16 @@
 &CONTROL
-calculation = 'scf'         ! for self consistent field calculation
-prefix = 'silicon'          ! prefix will be added to the output files (file name)
-outdir = './silicon/'   ! output directory (you should check with your working directory)
-pseudo_dir = './PPlibrary/'   ! path to accesss the pseudopotential(s)  (you should check with your working directory)
+calculation = 'scf'         ! for self-consistent field calculation
+prefix = 'silicon'          ! The prefix will be added to the output files (file name)
+outdir = './silicon/'       ! output directory (you should check with your working directory)
+pseudo_dir = './PPlibrary/'   ! path to access the pseudopotential(s)  (you should check with your working directory)
 verbosity = 'high'          ! 'high' means more details to be written on the output file(s).
 /
 
 &SYSTEM
 ibrav =  2                  ! Bravais lattice index, which is 2 for FCC structure (check pw.x documentation for other types of lattices)
 celldm(1) = 10.26121        ! lattice constant in Bohr (atomic unit) (check pw.x documentation for more details)
-nat =  2                    ! number of atoms in an unit cell
-ntyp = 1                    ! number of different types of atom in the cell
+nat =  2                    ! number of atoms in a unit cell
+ntyp = 1                    ! number of different types of atoms in the cell
 ecutwfc = 50                ! Kinetic energy cutoff (Ry) for wavefunction (check its minimum value in the pseudopotential file)
 ecutrho = 300               ! Kinetic energy cutoff (Ry) for charge density (check its minimum value in the pseudopotential file)
 nbnd = 8                    ! number of bands to calculate
