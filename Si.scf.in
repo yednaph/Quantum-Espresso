@@ -23,7 +23,7 @@ mixing_beta = 0.6           ! mixing factor for self-consistency
 /
 
 ATOMIC_SPECIES
-  Si 28.086 Si.pz-vbc.UPF
+  Si 28.086 Si.pbe-nl-rrkjus_psl.1.0.0.UPF
 
 ATOMIC_POSITIONS (alat)
   Si 0.0 0.0 0.0
