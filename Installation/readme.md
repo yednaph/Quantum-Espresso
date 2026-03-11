@@ -35,15 +35,15 @@
 <p>4. Configure the QE: ./configure (sometimes an error due to the git package occurs). In that case, install the git package by sudo apt-get install git</p>
 <p>Now check for errors (if any), The message below is just fine</p>
 <p>The following libraries have been found:</p>
-<p>
-BLAS_LIBS= -lblas
-LAPACK_LIBS=-L/usr/local/lib -llapack -lblas
-FFT_LIBS= -lfftw3
-……
-……
-……
-configure: success
-</p>
+
+<p>BLAS_LIBS= -lblas</p>
+<p>LAPACK_LIBS=-L/usr/local/lib -llapack -lblas</p>
+<p>FFT_LIBS= -lfftw3</p>
+<p>……</p>
+<p>……</p>
+<p>……</p>
+<p>configure: success</p>
+
 <p>5. make install all</p>
 <p>6. Now copy all the executable files to /usr/local/bin: sudo cp *.x /usr/local/bin</p>
 <p>It’s done.</p>
