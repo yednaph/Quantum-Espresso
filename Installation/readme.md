@@ -43,8 +43,7 @@ FFT_LIBS= -lfftw3
 ……
 ……
 configure: success
-```
-<p>
+</p>
 <p>5. make install all</p>
 <p>6. Now copy all the executable files to /usr/local/bin: sudo cp *.x /usr/local/bin</p>
 <p>It’s done.</p>
