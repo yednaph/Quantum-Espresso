@@ -22,7 +22,9 @@
 <p>4. Copy the `make.inc` file from the `INSTALL` folder to the present folder: `cp INSTALL/make.inc.gfortran make.inc`</p>
 <p>5. Now edit this newly created `make.inc` file: `vim make.inc`</p>
 <p>Now edit the make.inc file, line #77 should be like</p>
-```j BLASLIB = $(TOPSRCDIR)/libblas.a (delete the ref from librefblas.s) ```
+```j 
+BLASLIB = $(TOPSRCDIR)/libblas.a (delete the ref from librefblas.s)
+```
 <p>6. Compile the BLAS library: `make blaslib`</p>
 <p>7. Now compile the LAPACK library: `make lapacklib`</p>
 <p>8. copy *.a files to /usr/local/lib location (root access is required): `sudo cp *.a /usr/local/lib/`</p>
