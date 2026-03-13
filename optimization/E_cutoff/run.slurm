@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J E_cutoff      # Job name
+#SBATCH -J e_cutoff_si   # Job name
 #SBATCH -p testpp        # name of partition for QE calculation
 #SBATCH -o job.%j.out    # Name of stdout output file (%j expands to jobId)
 #SBATCH -N 1             # Total number of nodes requested
