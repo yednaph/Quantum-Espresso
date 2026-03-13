@@ -21,8 +21,8 @@ cat > scf.in << EOF
 /
 &system
     ibrav=2
-!    celldm(1)=5.4307 ! Experimental value
-    celldm(1)=10.33520 ! optimized value from previous calculation
+!    celldm(1)=5.4310 ! Experimental value
+    celldm(1)=10.263103 ! optimized value from previous calculation
     nat=2
     ntyp=1
     ecutwfc=80.0  ! optimized value from previous calculation
