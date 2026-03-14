@@ -50,6 +50,10 @@
 <p>……</p>
 <p>configure: success</p>
 
-<p>5. make install all</p>
+<p>5. make install all or make -j4 all (for parallel job) </p>
 <p>6. Now copy all the executable files to /usr/local/bin: sudo cp *.x /usr/local/bin</p>
+
+<p> Edit `.bashrc` `echo 'export PATH="/qe-7.2/bin:$PATH"' >> ~/.bashrc`</p>
+<p>Else `sudo gedit ~/.bashrc` and very carefully add `export PATH="/path-of-bin-folder-of-installed-qe:$PATH"</p>
+<p>then `source ~/.bashrc` else restart the terminal.</p>
 <p>It’s done.</p>
