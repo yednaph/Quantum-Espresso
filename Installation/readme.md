@@ -26,6 +26,12 @@
 <p>6. Compile the BLAS library: make blaslib</p>
 <p>7. Now compile the LAPACK library: make lapacklib</p>
 <p>8. copy *.a files to /usr/local/lib location (root access is required): sudo cp *.a /usr/local/lib/</p>
+
+<b>If you want to compile for parallel processing, install openmpi </b>
+
+`sudo apt install --no-install-recommends  libopenmpi-dev  libscalapack-openmpi-dev`
+   
+
   
 <b>Installation of Quantum Espresso</b>
 <p>1. Download the package: wget https://github.com/QEF/q-e/archive/refs/tags/qe-7.0.tar.gz</p>
